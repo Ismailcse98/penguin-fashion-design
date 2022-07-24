@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+/*================================
+ Header section 
+ ==================================*/
+.banner-section, .header-section{
+    background: #FFFBF2;
+}
+.logo-img{
+    width: 250px;
+}
+/*======================================
+ Banner-section 
+ ======================================*/
+.banner-title h2,
+.woman-section h2,
+.man-section h2,
+.our-team-mamber h2,
+.video-payment-section h3{
+    font-family: 'Bebas Neue', cursive;
+    color: #363959;
+    font-size: 48px;
+}
+.banner-title h2 span{
+    color: #FABE47;
+}
+.buy-btn{
+    background: rgb(88,110,6);
+    background: linear-gradient(90deg, rgba(88,110,6,1) 2%, rgba(174,215,12,0.8687850140056023) 48%);
+    border-radius: 20px;
+}
+
+/* =======================================
+card-section
+========================================= */
+.woman-card, .sell-card{
+    border: 0px;
+}
+.woman-img{
+    text-align: center;
+    background: #F3F3F3;
+    border-radius: 10px;
+    
+}
+.woman-img img{
+    width: 80%;
+}
+.card-price{
+    border: 0px;
+    background: #fff;
+}
+.price h2{
+    color: #FABE47;
+}
+.sell-section h2{
+    font-family: 'Bebas Neue', cursive;
+    color: #363959;
+    font-size: 25px;
+}
+.sell-card{
+    border-radius: 20px;
+}
+/*===============================
+ video&payment-section 
+ ================================*/
+.mamber-item,
+.paywith{
+    padding: 10px;
+    background: #ddd;
+    border: 3px solid #F25421;
+    border-radius: 0px 30px 0px 30px;
+}
+.mamber-item img,
+.paywith img{
+    border-radius: 0px 30px 0px 30px;
+}
+
+/*===========================
+our-team-mamber
+============================ */
+.our-team-mamber h3{
+    border-bottom: 4px solid #F25421;
+}
+input[type=text],
+input[type=email]{
+    color: #000;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+input[type=text]:focus,
+input[type=email]:focus{
+    outline: 0px;
+}
+input[type=submit]{
+    border: 0px;
+    background: #F25421;
+    color: #fff;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    pointer-events: none;
+}
+.mamber-item{
+    border: 3px solid #90AB3C;
+    border-radius: 50px 0px 50px 0px;
+}
+.mamber-item img{
+    border-radius: 50px 0px 50px 0px;
+}
+.slide-indicators li {
+    width: 20px;
+    height: 20px;
+    background-color: #F25421;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-radius: 30px;
+}
+
+
+/*===========================
+ footer-section 
+ =============================*/
+.footer{
+    background: #A4BC46;
+    font-size: 20px;
+}
+.video-payment-section span,
+.footer span{
+    color: #F25421;
+}
+
+/*==================================== 
+Responsive section 
+======================================*/
+@media (min-width: 768px) and (max-width: 992px) { 
+    .woman-jeck-width{
+        width: 50%;
+    }
+    .woman-jeck-width-100{
+        width: 100%;
+    }
+    .sell-width-100{
+        width: 100%;
+    }
+    .sell-card{
+        max-width:100% !important;
+    }
+    .sell-card img{
+        width: 100px;
+        height: 100px;
+    }
+ }
+ @media (max-width:992px){
+    .sell-items{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+ }
+ @media (max-width:370px){
+    .logo-img{
+        width: 150px;
+    }
+    .banner-title h2,
+    .woman-section h2,
+    .man-section h2,
+    .our-team-mamber h2,
+    .video-payment-section h3 {
+         font-size: 30px;
+    }
+    .card-price {
+        flex-direction: column;
+    }
+    .footer{
+        font-size: 15px;
+    }
+ }
